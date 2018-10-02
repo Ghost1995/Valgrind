@@ -5,10 +5,12 @@
 */
 
 #include <gtest/gtest.h>
+#include"AnalogSensor.cpp"
 
 /**
- * @brief This is basic test which does not do anything as such as no method of AnalogSensor has been called.
+ * @brief This is basic test which tests the Read method of class AnalogSensor.
  */
-TEST(dummy, should_pass) {
-  EXPECT_EQ(1, 1);
+AnalogSensor test(10);
+TEST(AnalogSensorTest, AnalogSensorReadTest) {
+  EXPECT_EQ(10, test.Read());
 }
