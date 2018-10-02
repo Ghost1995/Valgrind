@@ -5,12 +5,12 @@
 */
 
 #include <gtest/gtest.h>
-#include"AnalogSensor.cpp"
+#include"AnalogSensor.hpp"
 
 /**
  * @brief This is basic test which tests the Read method of class AnalogSensor.
  */
 AnalogSensor test(10);
-TEST(AnalogSensorTest, AnalogSensorReadTest) {
+TEST(AnalogSensorTest, ReadTest) {
   EXPECT_EQ(10, test.Read());
 }
